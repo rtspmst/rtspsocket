@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.fhc.laser_monitor_sw_android_rtsp_app">
+
+    <uses-feature android:glEsVersion="0x00020000" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 获取WIFI信息状态的权限 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- 获取网络状态改变的权限 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <!--位置信息-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!--如果是安卓10.0，需要后台获取连接的wifi名称则添加进程获取位置信息权限 -->
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <!--android 10.0使用wifi api新添加的权限-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!--    震动-->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:anyDensity="true"
+        android:fullBackupContent="true"
+        android:icon="@drawable/ic_launcher2"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:resizeableActivity="false"
+        android:roundIcon="@drawable/ic_launcher2"
+        android:supportsRtl="true"
+        android:theme="@style/FullscreenTheme"
+        tools:targetApi="q">
+
+        <!-- ====================android:resizeableActivity="false" 禁止分屏=========================================== -->
+
+        <activity
+            android:name=".activity.LoginActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="landscape"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <!--主页面-->
+        <activity
+            android:name=".activity.MainActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="sensorLandscape">
+
+            <meta-data
+                android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
+                android:resource="@xml/device_filter" />
+
+        </activity>
+
+        <!-- =============================================================== -->
+
+        <activity
+            android:name=".activity.PictureZoomActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name=".activity.LoginCcountListActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name=".activity.LoginModifyAccountActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name=".activity.LoginNewAccountActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="landscape" />
+
+        <!-- =============================================================== -->
+
+        <activity
+            android:name=".activity.PowerSwitchButtonActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape"
+            android:theme="@style/LibraryAppTheme" />
+
+        <!-- =============================================================== -->
+
+        <activity
+            android:name=".activity.VideoPlaybackActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape"
+            android:theme="@style/LibraryAppTheme" />
+
+        <!-- =============================================================== -->
+
+        <activity
+            android:name=".activity.BootLogActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="landscape"
+            android:theme="@style/LibraryAppTheme" />
+
+        <!-- =============================================================== -->
+
+        <activity
+            android:name=".activity.AutoFocusActivity"
+            android:screenOrientation="landscape" /> <!-- 屏屏幕上 = "黑色适配" -->
+
+        <!-- =============================================================== -->
+
+        <activity
+            android:name=".activity.VideoPlayActivity"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="landscape" />
+
+        <!-- =============================================================== -->
+
+
+        <provider
+            android:name=".utils.MyFileProvider"
+            android:authorities="com.fhc.laser_monitor_sw_android_rtsp_app.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <!-- =============================================================== -->
+
+        <meta-data
+            android:name="design_width_in_dp"
+            android:value="1080" />
+
+        <meta-data
+            android:name="design_height_in_dp"
+            android:value="1920" />
+
+        <!-- =============================================================== -->
+
+    </application>
+
+</manifest>

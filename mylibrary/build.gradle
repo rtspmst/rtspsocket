@@ -1,0 +1,58 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+
+    compileSdk 29
+    ndkVersion '25.2.9519653'
+    buildToolsVersion '29.0.3'
+
+    defaultConfig {
+        minSdkVersion 21
+//        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        consumerProguardFiles 'proguard-rules.pro'
+
+        buildConfigField 'boolean', 'MEDIA_DEBUG', 'false'
+
+
+        externalNativeBuild {
+            cmake {
+//                cppFlags "-std=c++11 -frtti -fexceptions"
+//                abiFilters /*'armeabi', 'mips',*/ 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64'//NDK 17及以上不再支持ABIs [mips64, armeabi, mips]
+//                'arm64-v8a'9.12添加 clean项目以后找不到自己的so
+                abiFilters 'arm64-v8a', 'armeabi-v7a'//NDK 17及以上不再支持ABIs [mips64, armeabi, mips]
+            }
+        }
+    }
+    buildTypes {
+        release {
+//            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'library.pro'
+        }
+    }
+
+    externalNativeBuild {
+        cmake {
+            path "CMakeLists.txt"
+        }
+    }
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+    mavenCentral()
+    google()
+}
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "androidx.appcompat:appcompat:1.0.0"
+    implementation "androidx.legacy:legacy-support-v4:1.0.0"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+
+}

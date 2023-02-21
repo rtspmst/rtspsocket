@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.BootLogActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_linshi"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/defaultColor1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_below="@+id/ll_linshi"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/click_back_selector"
+            android:gravity="center_vertical"
+            android:text="All members"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/button_style"
+            android:paddingLeft="35dp"
+            android:paddingTop="10dp"
+            android:paddingRight="35dp"
+            android:paddingBottom="10dp"
+            android:text="ADD"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_item_root"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_below="@+id/ll_linshi"
+        android:layout_marginTop="1dp"
+        android:background="@color/light_grey"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <!--账号-->
+        <TextView
+            android:id="@+id/tv_name_admin"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+        <!--密码-->
+        <TextView
+            android:id="@+id/tv_admin_psd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/iv_look_item_admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!--修改密码-->
+        <Button
+            android:id="@+id/btn_change_psd_admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/button_style2"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp"
+            android:text="Ubah kata sandi"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <com.fhc.laser_monitor_sw_android_rtsp_app.widget.EmptyRecyclerView
+        android:id="@+id/recylerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout_item_root"
+        android:background="@color/black_00_color" />
+
+    <include
+        layout="@layout/emptyview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout_item_root"
+        android:visibility="gone" />
+</RelativeLayout>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.fhc.laser_monitor_sw_android_rtsp_app.views.MyDrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/myDrawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/aaaaaa"
+    tools:context=".activity.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="400dp"
+        android:src="@mipmap/bg_logo_2" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="400dp"
+        android:src="@mipmap/bg_logo_2" />
+
+    <!--左边抽屉菜单-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        tools:context=".activity.MainActivity">
+
+        <!--左半屏-->
+        <include layout="@layout/view_left_half_screen" />
+
+        <!--右半屏-->
+        <include layout="@layout/view_right_half_screen" />
+
+        <!--顶部信号栏-->
+        <include layout="@layout/view_top_signal_bar" />
+
+        <!--底部按钮区域-->
+        <include layout="@layout/view_bottom_button_area" />
+
+        <!--电机A-->
+        <include layout="@layout/view_motor_area_a" />
+
+        <!--电机B-->
+        <include layout="@layout/view_motor_area_b" />
+
+        <!--声音调整区-->
+        <!--        <include layout="@layout/view_volume_area" />-->
+
+        <!--方向B 默认隐藏 1185会展示-->
+        <include layout="@layout/view_direction_bar_b" />
+
+        <!--方向A 右下角方向区-->
+        <include layout="@layout/view_direction_bar_a" />
+
+        <TextView
+            android:id="@+id/tvKsdj"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            android:gravity="center"
+            android:text="长按屏幕恢复"
+            android:textColor="@color/white"
+            android:textSize="45sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/tvIsOccupy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:src="@drawable/ic_control"
+            android:visibility="gone" />
+
+        <!--左电机-->
+        <TextView
+            android:id="@+id/tvBiaoji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/button_style"
+            android:padding="20dp"
+            android:text="标记 :0"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/menuLayoutLeft"
+        android:layout_width="350dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:background="@color/blacky"
+        android:paddingLeft="50dp"
+        android:paddingTop="80dp"
+        android:paddingRight="50dp"
+        android:paddingBottom="80dp">
+
+        <Button
+            android:id="@+id/btnSet1"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/anniu_bg_button"
+            android:gravity="center"
+            android:text="S1 SET"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btnGet1"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/anniu_bg_button"
+            android:gravity="center"
+            android:text="S1 RECALL"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <!--0000000000000000000000000000000000000000000000-->
+
+        <Button
+            android:id="@+id/btnSet2"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/anniu_bg_button"
+            android:gravity="center"
+            android:text="S2 SET"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btnGet2"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/anniu_bg_button"
+            android:gravity="center"
+            android:text="S2 RECALL"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <!--0000000000000000000000000000000000000000000000-->
+
+        <Button
+            android:id="@+id/btnSet3"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/anniu_bg_button"
+            android:gravity="center"
+            android:text="S3 SET"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btnGet3"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/anniu_bg_button"
+            android:gravity="center"
+            android:text="S3 RECALL"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+</com.fhc.laser_monitor_sw_android_rtsp_app.views.MyDrawerLayout>

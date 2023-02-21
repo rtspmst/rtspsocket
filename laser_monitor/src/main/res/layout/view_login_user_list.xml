@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_item_root"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    android:layout_marginTop="1dp"
+    android:background="@color/light_grey"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <!--    账号-->
+    <TextView
+        android:id="@+id/tv_user_name"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="22sp" />
+
+    <!--    密码-->
+    <TextView
+        android:id="@+id/tv_user_psd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="22sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <ImageView
+        android:id="@+id/iv_look_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!--    修改密码-->
+    <Button
+        android:id="@+id/btn_change_psd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/button_style2"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp"
+        android:text="Ubah kata sandi"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_delete_users"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/button_style2"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp"
+        android:text="Hapus akun"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+</LinearLayout>

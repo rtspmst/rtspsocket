@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--  AAA 电机区  最开始左边展示的算AAA区 -->
+
+    <LinearLayout
+        android:id="@+id/lyFabPlusMinusA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="180dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!--左电机-->
+        <TextView
+            android:id="@+id/tvHintA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_style"
+            android:padding="8dp"
+            android:text="左电机"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/fabBtnPlusA"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_fangxiang"
+            android:src="@drawable/ic_plus_selector" />
+
+        <ImageView
+            android:id="@+id/fabBtnMinusA"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bg_fangxiang"
+            android:src="@drawable/ic_minus_selector" />
+
+    </LinearLayout>
+    <!--    电机区  下-->
+
+</merge>

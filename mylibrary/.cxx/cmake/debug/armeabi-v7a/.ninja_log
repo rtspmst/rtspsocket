@@ -1,0 +1,5 @@
+# ninja log v5
+0	47	0	clean	76977dcb8a119118
+32	947	698649533	CMakeFiles/opusJni.dir/src/main/cpp/opus-lib.cpp.o	d6c867fc9d579667
+947	6116	698649539	../../../../build/intermediates/cmake/debug/obj/armeabi-v7a/libopusJni.so	234a23d14c1f84cb
+0	19	0	clean	76977dcb8a119118

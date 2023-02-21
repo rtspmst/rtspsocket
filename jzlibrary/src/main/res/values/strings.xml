@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    <string name="tips_not_wifi">You are currently using the mobile network, the player will continue to consume traffic</string>-->
+<!--    <string name="tips_not_wifi_confirm">Resume</string>-->
+<!--    <string name="tips_not_wifi_cancel">henti pemutaran</string>-->
+<!--    <string name="no_url">alamat pemutaran tidak valid</string>-->
+<!--    <string name="replay">putar ulang</string>-->
+<!--    <string name="click_to_restart">klik untuk coba lagi</string>-->
+<!--    <string name="video_loading_failed">pemuatan video gagal</string>-->
+
+        <string name="tips_not_wifi">You are currently using the mobile network, the player will continue to consume traffic</string>
+        <string name="tips_not_wifi_confirm">Resume</string>
+        <string name="tips_not_wifi_cancel">Stop play</string>
+        <string name="no_url">No url</string>
+        <string name="replay">Replay</string>
+        <string name="click_to_restart">Click to try again</string>
+        <string name="video_loading_failed">Video loading failed</string>
+
+    <!--<string name="tips_not_wifi">您当前正在使用移动网络，继续播放将消耗流量</string>-->
+    <!--<string name="tips_not_wifi_confirm">继续播放</string>-->
+    <!--<string name="tips_not_wifi_cancel">停止播放</string>-->
+    <!--<string name="no_url">播放地址无效</string>-->
+    <!--<string name="replay">重播</string>-->
+    <!--<string name="click_to_restart">点击重试</string>-->
+    <!--<string name="video_loading_failed">视频加载失败</string>-->
+</resources>

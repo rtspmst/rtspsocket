@@ -1,0 +1,22 @@
+{
+  "buildFiles": [
+    "G:\\MY\\mst_pad_yinni\\laser_monitor-sw-android-rtsp-app-l-mode-switch\\mylibrary\\CMakeLists.txt",
+    "D:\\AndroidSDK\\Android\\Sdk\\ndk\\25.2.9519653\\build\\cmake\\android.toolchain.cmake",
+    "D:\\AndroidSDK\\Android\\Sdk\\ndk\\25.2.9519653\\build\\cmake\\android-legacy.toolchain.cmake",
+    "D:\\AndroidSDK\\Android\\Sdk\\ndk\\25.2.9519653\\build\\cmake\\platforms.cmake",
+    "D:\\AndroidSDK\\Android\\Sdk\\ndk\\25.2.9519653\\build\\cmake\\compiler_id.cmake"
+  ],
+  "cleanCommands": [
+    "D:\\AndroidSDK\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"G:\\MY\\mst_pad_yinni\\laser_monitor-sw-android-rtsp-app-l-mode-switch\\mylibrary\\.cxx\\cmake\\release\\arm64-v8a\" clean"
+  ],
+  "buildTargetsCommand": "D:\\AndroidSDK\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe  -C \"G:\\MY\\mst_pad_yinni\\laser_monitor-sw-android-rtsp-app-l-mode-switch\\mylibrary\\.cxx\\cmake\\release\\arm64-v8a\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "opusJni-Release-arm64-v8a": {
+      "artifactName": "opusJni",
+      "buildCommand": "D:\\AndroidSDK\\Android\\Sdk\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"G:\\MY\\mst_pad_yinni\\laser_monitor-sw-android-rtsp-app-l-mode-switch\\mylibrary\\.cxx\\cmake\\release\\arm64-v8a\" opusJni",
+      "abi": "arm64-v8a",
+      "output": "G:\\MY\\mst_pad_yinni\\laser_monitor-sw-android-rtsp-app-l-mode-switch\\mylibrary\\build\\intermediates\\cmake\\release\\obj\\arm64-v8a\\libopusJni.so",
+      "runtimeFiles": []
+    }
+  }
+}

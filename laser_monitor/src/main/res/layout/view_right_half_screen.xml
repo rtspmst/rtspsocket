@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--    右半屏-->
+
+    <RelativeLayout
+        android:id="@+id/rv2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/rv1"
+  >
+
+        <FrameLayout
+            android:id="@+id/surfaceView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+        <RelativeLayout
+            android:id="@+id/gestureTx2spkVolumeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/souhu_player_gesture_bg"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/gestureTx2spkIvPlayerVolume"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/iv_volume" />
+
+            <TextView
+                android:id="@+id/gestureTx2spkTvVolumePercentage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gestureTx2spkIvPlayerVolume"
+                android:layout_centerHorizontal="true"
+                android:gravity="right"
+                android:text="0%"
+                android:textColor="#ffececec" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/fabRightDone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="30dp"
+            android:background="@drawable/button_style3"
+            android:src="@drawable/ic_done_24"
+            android:visibility="gone" />
+
+        <!--android:text="Y"  不能改 -->
+        <TextView
+            android:id="@+id/btnRightY"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/tv_bg_shape"
+            android:gravity="center"
+            android:text="Y"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <!--  android:text="X" 不能改 -->
+        <TextView
+            android:id="@+id/btnRightX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/btnRightY"
+            android:layout_alignParentStart="true"
+            android:layout_margin="10dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/tv_bg_shape"
+            android:gravity="center"
+            android:text="X"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/ivOneB"
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:layout_centerInParent="true"
+            android:background="@color/signal_status_view_bar_green"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/ivTwoB"
+            android:layout_width="0.2dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:background="@color/signal_status_view_bar_green"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</merge>

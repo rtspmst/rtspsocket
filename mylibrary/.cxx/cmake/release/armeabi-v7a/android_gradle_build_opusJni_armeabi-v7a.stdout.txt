@@ -1,0 +1,2 @@
+ninja: Entering directory `G:\MY\mst_pad_yinni\laser_monitor-sw-android-rtsp-app-l-mode-switch\mylibrary\.cxx\cmake\release\armeabi-v7a'
+ninja: no work to do.

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/lyHint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ivBattery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_margin="10dp"
+            app:srcCompat="@drawable/ic_battery_alert" />
+
+        <com.fhc.laser_monitor_sw_android_rtsp_app.views.SignalStatusView
+            android:id="@+id/signalStatus"
+            android:layout_width="250dp"
+            android:layout_height="20dp"
+            android:orientation="horizontal"
+            android:rotation="-180"
+            android:visibility="visible"
+            app:mBackGroundColor="@color/black_10_color"
+            app:mProcessDirection="1" />
+
+        <!--距离: 182.66m-->
+        <TextView
+            android:id="@+id/tvDistanceBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/tv_quick_bg_shape"
+            android:gravity="start|center_vertical"
+            android:text="距离: 182.66m"
+            android:textColor="@android:color/white"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tvLeftEncoder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/tv_quick_bg_shape"
+            android:gravity="left|center_vertical"
+            android:text="左值: 1200"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvRightEncoder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/tv_quick_bg_shape"
+            android:gravity="left|center_vertical"
+            android:text="右值: 1800"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvJZ1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/tv_bg_shape"
+            android:text="2L"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvJZ2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/tv_bg_shape"
+            android:text="2L"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:visibility="gone" />
+    </LinearLayout>
+</merge>

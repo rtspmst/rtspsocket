@@ -1,0 +1,21 @@
+                Executable : D:\AndroidSDK\Android\Sdk\cmake\3.10.2.4988404\bin\cmake.exe
+arguments : 
+-HG:\MY\mst_pad_yinni\laser_monitor-sw-android-rtsp-app-l-mode-switch\mylibrary
+-DCMAKE_FIND_ROOT_PATH=G:\MY\mst_pad_yinni\laser_monitor-sw-android-rtsp-app-l-mode-switch\mylibrary\.cxx\cmake\release\prefab\arm64-v8a\prefab
+-DCMAKE_BUILD_TYPE=Release
+-DCMAKE_TOOLCHAIN_FILE=D:\AndroidSDK\Android\Sdk\ndk\25.2.9519653\build\cmake\android.toolchain.cmake
+-DANDROID_ABI=arm64-v8a
+-DANDROID_NDK=D:\AndroidSDK\Android\Sdk\ndk\25.2.9519653
+-DANDROID_PLATFORM=android-21
+-DCMAKE_ANDROID_ARCH_ABI=arm64-v8a
+-DCMAKE_ANDROID_NDK=D:\AndroidSDK\Android\Sdk\ndk\25.2.9519653
+-DCMAKE_EXPORT_COMPILE_COMMANDS=ON
+-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=G:\MY\mst_pad_yinni\laser_monitor-sw-android-rtsp-app-l-mode-switch\mylibrary\build\intermediates\cmake\release\obj\arm64-v8a
+-DCMAKE_MAKE_PROGRAM=D:\AndroidSDK\Android\Sdk\cmake\3.10.2.4988404\bin\ninja.exe
+-DCMAKE_SYSTEM_NAME=Android
+-DCMAKE_SYSTEM_VERSION=21
+-BG:\MY\mst_pad_yinni\laser_monitor-sw-android-rtsp-app-l-mode-switch\mylibrary\.cxx\cmake\release\arm64-v8a
+-GNinja
+jvmArgs : 
+
+Build command args:

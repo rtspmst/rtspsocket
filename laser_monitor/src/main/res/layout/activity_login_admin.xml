@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/faf8ba16"
+    tools:context=".activity.LoginActivity">
+
+    <TextView
+        android:id="@+id/tv_admin_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:gravity="center"
+        android:text="ADMINISTRATOR LOGIN"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_alignParentLeft="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="30dp"
+        android:src="@mipmap/bg_logo_3" />
+
+    <RelativeLayout
+        android:id="@+id/dlfkdkl"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <include
+            android:id="@+id/input_layout_qw"
+            layout="@layout/layout_login_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <include
+            android:id="@+id/layout_progress"
+            layout="@layout/layout_login_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/input_layout_qw"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dip"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_admin_login"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/text_bg"
+                android:gravity="center"
+                android:paddingLeft="15dip"
+                android:paddingTop="2dip"
+                android:paddingRight="15dip"
+                android:paddingBottom="2dip"
+                android:text="Login"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

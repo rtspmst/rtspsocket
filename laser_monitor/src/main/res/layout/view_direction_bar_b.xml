@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--    9个按钮 五个站位 -->
+
+    <RelativeLayout
+        android:id="@+id/tbDirectionButtons"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="50dp"
+        android:background="@color/defaultColor"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:visibility="gone"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/fabBtnUpB"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button_style3"
+            android:src="@drawable/ic_up"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/fabBtnLeftB"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/button_style3"
+            android:src="@drawable/ic_left"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/fabBtnRightB"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/button_style3"
+            android:src="@drawable/ic_right"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/fabBtnDownB"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button_style3"
+            android:src="@drawable/ic_down"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+</merge>

@@ -1,0 +1,3 @@
+G:/MY/mst_pad_yinni/laser_monitor-sw-android-rtsp-app-l-mode-switch/mylibrary/.cxx/cmake/release/armeabi-v7a/CMakeFiles/opusJni.dir
+G:/MY/mst_pad_yinni/laser_monitor-sw-android-rtsp-app-l-mode-switch/mylibrary/.cxx/cmake/release/armeabi-v7a/CMakeFiles/edit_cache.dir
+G:/MY/mst_pad_yinni/laser_monitor-sw-android-rtsp-app-l-mode-switch/mylibrary/.cxx/cmake/release/armeabi-v7a/CMakeFiles/rebuild_cache.dir
