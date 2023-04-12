@@ -1,3 +1,0 @@
-G:/MY/mst_pad_yinni/laser_monitor-sw-android-rtsp-app-l-mode-switch/mylibrary/.cxx/cmake/release/arm64-v8a/CMakeFiles/opusJni.dir
-G:/MY/mst_pad_yinni/laser_monitor-sw-android-rtsp-app-l-mode-switch/mylibrary/.cxx/cmake/release/arm64-v8a/CMakeFiles/edit_cache.dir
-G:/MY/mst_pad_yinni/laser_monitor-sw-android-rtsp-app-l-mode-switch/mylibrary/.cxx/cmake/release/arm64-v8a/CMakeFiles/rebuild_cache.dir

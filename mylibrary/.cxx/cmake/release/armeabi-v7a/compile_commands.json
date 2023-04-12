@@ -1,7 +1,0 @@
-[
-{
-  "directory": "G:/MY/mst_pad_yinni/laser_monitor-sw-android-rtsp-app-l-mode-switch/mylibrary/.cxx/cmake/release/armeabi-v7a",
-  "command": "D:\\AndroidSDK\\Android\\Sdk\\ndk\\25.2.9519653\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=armv7-none-linux-androideabi21 --sysroot=D:/AndroidSDK/Android/Sdk/ndk/25.2.9519653/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -DopusJni_EXPORTS -I../../../../src/main/cpp/opus/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -O3 -DNDEBUG  -fPIC   -o CMakeFiles\\opusJni.dir\\src\\main\\cpp\\opus-lib.cpp.o -c G:\\MY\\mst_pad_yinni\\laser_monitor-sw-android-rtsp-app-l-mode-switch\\mylibrary\\src\\main\\cpp\\opus-lib.cpp",
-  "file": "G:/MY/mst_pad_yinni/laser_monitor-sw-android-rtsp-app-l-mode-switch/mylibrary/src/main/cpp/opus-lib.cpp"
-}
-]

@@ -1,3 +1,0 @@
-ninja: Entering directory `G:\MY\mst_pad_yinni\laser_monitor-sw-android-rtsp-app-l-mode-switch\mylibrary\.cxx\cmake\debug\armeabi-v7a'
-[1/2] Building CXX object CMakeFiles/opusJni.dir/src/main/cpp/opus-lib.cpp.o
-[2/2] Linking CXX shared library ..\..\..\..\build\intermediates\cmake\debug\obj\armeabi-v7a\libopusJni.so

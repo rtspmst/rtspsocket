@@ -1,9 +1,0 @@
-# ninja log v5
-1	399	698584793	CMakeFiles/opusJni.dir/src/main/cpp/opus-lib.cpp.o	c563d1b82ef03abf
-399	919	698584793	../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libopusJni.so	e79b566c1b9ac868
-0	65	0	clean	76977dcb8a119118
-1	301	698649539	CMakeFiles/opusJni.dir/src/main/cpp/opus-lib.cpp.o	c563d1b82ef03abf
-301	907	698649540	../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libopusJni.so	e79b566c1b9ac868
-0	20	0	clean	76977dcb8a119118
-1	272	698650902	CMakeFiles/opusJni.dir/src/main/cpp/opus-lib.cpp.o	c563d1b82ef03abf
-272	674	698650902	../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libopusJni.so	e79b566c1b9ac868

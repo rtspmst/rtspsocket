@@ -1,3 +1,17 @@
-include ':lprogressview'
-include ':jzlibrary'
-include ':laser_monitor',':mylibrary'
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "SocketLib"
+include ':app'
+include ':socketlibrary'
