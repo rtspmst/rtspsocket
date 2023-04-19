@@ -16,4 +16,3 @@ rootProject.name = "SocketLib"
 include ':app'
 
 include ':mylibrary'
-include ':jzlibrary'
