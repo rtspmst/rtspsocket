@@ -5,7 +5,7 @@ apply plugin: 'kotlin-android-extensions'
 android {
 
     compileSdk 29
-    buildToolsVersion '29.0.3'
+//    buildToolsVersion '29.0.3'
     ndkVersion '25.2.9519653'
 
     defaultConfig {
@@ -54,4 +54,8 @@ dependencies {
     implementation "androidx.legacy:legacy-support-v4:1.0.0"
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.71"
 
+    //工具类
+    implementation "com.blankj:utilcode:1.29.0"
+
+    implementation 'com.tencent:mmkv:1.0.10'
 }
