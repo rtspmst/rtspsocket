@@ -5,7 +5,6 @@ plugins {
 android {
     namespace 'com.whmst.socketlib'
     compileSdk 29
-//    buildToolsVersion '29.0.9'
 
     defaultConfig {
         applicationId "com.whmst.socketlib"

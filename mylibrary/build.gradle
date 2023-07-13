@@ -65,8 +65,10 @@ dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation "androidx.appcompat:appcompat:1.0.0"
     implementation "androidx.legacy:legacy-support-v4:1.0.0"
-//    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.71"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.71"
 
     implementation 'com.tencent:mmkv:1.0.10'
+    //工具类
+    implementation "com.blankj:utilcode:1.29.0"
 
 }
