@@ -4,12 +4,13 @@ plugins {
 
 android {
     namespace 'com.whmst.socketlib'
-    compileSdk 33
+    compileSdk 29
+    buildToolsVersion '29.0.9'
 
     defaultConfig {
         applicationId "com.whmst.socketlib"
         minSdk 24
-        targetSdk 33
+        targetSdk 29
         versionCode 1
         versionName "1.0"
 
@@ -29,14 +30,6 @@ android {
 }
 
 dependencies {
-
-    implementation 'androidx.appcompat:appcompat:1.4.1'
-    implementation 'com.google.android.material:material:1.5.0'
-    implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
-    implementation project(path: ':mylibrary')
-//    implementation project(path: ':jzlibrary')
-
-    testImplementation 'junit:junit:4.13.2'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "androidx.appcompat:appcompat:1.0.0"
 }

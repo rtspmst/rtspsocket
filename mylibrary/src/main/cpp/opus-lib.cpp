@@ -9,7 +9,7 @@
 extern "C" {
 #endif
 
-JNIEXPORT jlong JNICALL Java_org_easydarwin_opus_opus_OpusUtils_createEncoder
+JNIEXPORT jlong JNICALL Java_org_easydarwin_opus_opus_MyOpusUtils_createEncoder
         (JNIEnv *env, jobject thiz, jint sampleRateInHz, jint channelConfig, jint complexity) {
     int error;
     OpusEncoder *pOpusEnc = opus_encoder_create(sampleRateInHz, channelConfig,
@@ -28,13 +28,13 @@ JNIEXPORT jlong JNICALL Java_org_easydarwin_opus_opus_OpusUtils_createEncoder
     }
     return (jlong) pOpusEnc;
 }
-JNIEXPORT jlong JNICALL Java_org_easydarwin_opus_opus_OpusUtils_createDecoder
+JNIEXPORT jlong JNICALL Java_org_easydarwin_opus_opus_MyOpusUtils_createDecoder
         (JNIEnv *env, jobject thiz, jint sampleRateInHz, jint channelConfig) {
     int error;
     OpusDecoder *pOpusDec = opus_decoder_create(sampleRateInHz, channelConfig, &error);
     return (jlong) pOpusDec;
 }
-JNIEXPORT jint JNICALL Java_org_easydarwin_opus_opus_OpusUtils_encode
+JNIEXPORT jint JNICALL Java_org_easydarwin_opus_opus_MyOpusUtils_encode
         (JNIEnv *env, jobject thiz, jlong pOpusEnc, jshortArray samples, jint offset,
          jbyteArray bytes) {
     OpusEncoder *pEnc = (OpusEncoder *) pOpusEnc;
@@ -52,7 +52,7 @@ JNIEXPORT jint JNICALL Java_org_easydarwin_opus_opus_OpusUtils_encode
     env->ReleaseByteArrayElements(bytes, pBytes, 0);
     return nRet;
 }
-JNIEXPORT jint JNICALL Java_org_easydarwin_opus_opus_OpusUtils_decode
+JNIEXPORT jint JNICALL Java_org_easydarwin_opus_opus_MyOpusUtils_decode
         (JNIEnv *env, jobject thiz, jlong pOpusDec, jbyteArray bytes,
          jshortArray samples) {
     OpusDecoder *pDec = (OpusDecoder *) pOpusDec;
@@ -70,14 +70,14 @@ JNIEXPORT jint JNICALL Java_org_easydarwin_opus_opus_OpusUtils_decode
     env->ReleaseByteArrayElements(bytes, pBytes, 0);
     return nRet;
 }
-JNIEXPORT void JNICALL Java_org_easydarwin_opus_opus_OpusUtils_destroyEncoder
+JNIEXPORT void JNICALL Java_org_easydarwin_opus_opus_MyOpusUtils_destroyEncoder
         (JNIEnv *env, jobject thiz, jlong pOpusEnc) {
     OpusEncoder *pEnc = (OpusEncoder *) pOpusEnc;
     if (!pEnc)
         return;
     opus_encoder_destroy(pEnc);
 }
-JNIEXPORT void JNICALL Java_org_easydarwin_opus_opus_OpusUtils_destroyDecoder
+JNIEXPORT void JNICALL Java_org_easydarwin_opus_opus_MyOpusUtils_destroyDecoder
         (JNIEnv *env, jobject thiz, jlong pOpusDec) {
     OpusDecoder *pDec = (OpusDecoder *) pOpusDec;
     if (!pDec)
