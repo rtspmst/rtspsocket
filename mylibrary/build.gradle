@@ -11,7 +11,7 @@ afterEvaluate {
                 // Applies the component for the release build variant.
                 from components.release
                 // You can then customize attributes of the publication as shown below.
-                groupId = 'com.org.easydarwin'
+                groupId = 'com.bk.webrtc'
                 artifactId = 'webrtc-apm'
                 version = '2.0.1'
             }
@@ -65,12 +65,8 @@ dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation "androidx.appcompat:appcompat:1.0.0"
     implementation "androidx.legacy:legacy-support-v4:1.0.0"
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.71"
-
-    //工具类
-    implementation "com.blankj:utilcode:1.29.0"
+//    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.71"
 
     implementation 'com.tencent:mmkv:1.0.10'
 
-    implementation project(':jzlibrary')
 }
