@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorA">#FF0000</color>
+    <color name="colorAccent">#FF9800</color>
+    <color name="colorB">#00FF00</color>
+    <color name="colorC">#0000FF</color>
+    <color name="colorPrimary">#607D8B</color>
+    <color name="colorPrimaryDark">#455A64</color>
+    <dimen name="jz_start_button_w_h_fullscreen">62dp</dimen>
+    <dimen name="jz_start_button_w_h_normal">45dp</dimen>
+    <string name="click_to_restart">Click to try again</string>
+    <string name="no_url">No url</string>
+    <string name="replay">Replay</string>
+    <string name="tips_not_wifi">You are currently using the mobile network, the player will continue to consume traffic</string>
+    <string name="tips_not_wifi_cancel">Stop play</string>
+    <string name="tips_not_wifi_confirm">Resume</string>
+    <string name="video_loading_failed">Video loading failed</string>
+    <style name="jz_popup_toast_anim" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+    <style name="jz_style_dialog_progress" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowAnimationStyle">@style/jz_popup_toast_anim</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <declare-styleable name="BubbleSeekBar">
+        <attr format="float|reference" name="bsb_min"/> <!--min < max, default: 0.0f-->
+        <attr format="float|reference" name="bsb_max"/> <!--min < max, default: 100.0f-->
+        <attr format="float|reference" name="bsb_progress"/> <!--real time progress value, default: min-->
+        <attr format="boolean" name="bsb_is_float_type"/> <!--support for float type-->
+        <attr format="dimension|reference" name="bsb_track_size"/> <!--height of right-track(on the right of thumb), default: 2dp-->
+        <!--height of left-track(on the left of thumb), default: 2dp higher than right-track's height-->
+        <attr format="dimension|reference" name="bsb_second_track_size"/>
+        <attr format="dimension|reference" name="bsb_thumb_radius"/> <!--radius of thumb, default: 2dp higher than left-track's height-->
+        <!--radius of thumb when be dragging, default: 2 times of left-track's height-->
+        <attr format="dimension|reference" name="bsb_thumb_radius_on_dragging"/>
+        <attr format="color|reference" name="bsb_track_color"/> <!--color of right-track, default: R.color.colorPrimary-->
+        <attr format="color|reference" name="bsb_second_track_color"/> <!--color of left-track, default: R.color.colorAccent-->
+        <attr format="color|reference" name="bsb_thumb_color"/> <!--color of thumb, default: same as left-track's color-->
+        <attr format="integer|reference" name="bsb_section_count"/> <!--shares of whole progress(max - min), default: 10-->
+        <attr format="boolean" name="bsb_show_section_mark"/> <!--show demarcation points or not, default: false-->
+        <attr format="boolean" name="bsb_auto_adjust_section_mark"/> <!--auto scroll to the nearest section_mark or not, default: false-->
+        <attr format="boolean" name="bsb_show_section_text"/> <!--show section-text or not, default: false-->
+        <attr format="dimension|reference" name="bsb_section_text_size"/> <!--text size of section-text, default: 14sp-->
+        <attr format="color|reference" name="bsb_section_text_color"/> <!--text color of section-text, default: same as right-track's color-->
+        <!--text position of section-text relative to track, sides, bottom_sides, below_section_mark, default: sides-->
+        <attr name="bsb_section_text_position">
+            <enum name="sides" value="0"/>
+            <enum name="bottom_sides" value="1"/>
+            <enum name="below_section_mark" value="2"/>
+        </attr>
+        <attr format="integer" name="bsb_section_text_interval"/> <!--the interval of two section-text, default: 1-->
+        <attr format="boolean" name="bsb_show_thumb_text"/> <!--show real time progress-text under thumb or not, default: false-->
+        <attr format="dimension|reference" name="bsb_thumb_text_size"/> <!--text size of progress-text, default: 14sp-->
+        <attr format="color|reference" name="bsb_thumb_text_color"/> <!--text color of progress-text, default: same as left-track's color-->
+        <attr format="boolean" name="bsb_show_progress_in_float"/> <!--show bubble-progress in float or not, default: false-->
+        <attr format="boolean" name="bsb_touch_to_seek"/> <!--touch anywhere on track to quickly seek, default: false-->
+        <attr format="boolean" name="bsb_seek_step_section"/> <!--seek one step by one section, the progress is discrete, default: false-->
+        <attr format="boolean" name="bsb_seek_by_section"/> <!--seek by section, the progress may not be linear, default: false-->
+        <attr format="color|reference" name="bsb_bubble_color"/> <!--color of bubble, default: same as left-track's color-->
+        <attr format="dimension|reference" name="bsb_bubble_text_size"/> <!--text size of bubble-progress, default: 14sp-->
+        <attr format="color|reference" name="bsb_bubble_text_color"/> <!--text color of bubble-progress, default: #ffffffff-->
+        <attr format="integer" name="bsb_anim_duration"/> <!--duration of animation, default: 200ms-->
+        <attr format="boolean" name="bsb_always_show_bubble"/> <!--bubble shows all time, default: false-->
+        <attr format="integer" name="bsb_always_show_bubble_delay"/> <!--the delay duration before bubble shows all the time, default: 200ms-->
+        <attr format="boolean" name="bsb_hide_bubble"/> <!--hide bubble, default: false-->
+        <attr format="boolean" name="bsb_rtl"/> <!--right to left, default: false-->
+        <attr name="android:enabled"/>
+    </declare-styleable>
+    <declare-styleable name="SignSeekBar">
+        <attr format="float|reference" name="ssb_min"/> <!--min < max, default: 0.0f-->
+        <attr format="float|reference" name="ssb_max"/> <!--min < max, default: 100.0f-->
+        <attr format="float|reference" name="ssb_progress"/> <!--real time progress value, default: min-->
+        <attr format="boolean" name="ssb_is_float_type"/> <!--support for float type-->
+        <attr format="dimension|reference" name="ssb_track_size"/> <!--height of right-track(on the right of thumb), default: 2dp-->
+        <!--height of left-track(on the left of thumb), default: 2dp higher than right-track's height-->
+        <attr format="dimension|reference" name="ssb_second_track_size"/>
+        <attr format="dimension|reference" name="ssb_thumb_radius"/> <!--radius of thumb, default: 2dp higher than left-track's height-->
+        <!--radius of thumb when be dragging, default: 2 times of left-track's height-->
+        <attr format="dimension|reference" name="ssb_thumb_radius_on_dragging"/>
+        <attr format="color|reference" name="ssb_track_color"/> <!--color of right-track, default: R.color.colorPrimary-->
+        <attr format="color|reference" name="ssb_second_track_color"/> <!--color of left-track, default: R.color.colorAccent-->
+        <attr format="color|reference" name="ssb_thumb_color"/> <!--color of thumb, default: same as left-track's color-->
+        <attr format="integer|reference" name="ssb_section_count"/> <!--shares of whole progress(max - min), default: 10-->
+        <attr format="boolean" name="ssb_show_section_mark"/> <!--show demarcation points or not, default: false-->
+        <attr format="boolean" name="ssb_auto_adjust_section_mark"/> <!--auto scroll to the nearest section_mark or not, default: false-->
+        <attr format="boolean" name="ssb_show_section_text"/> <!--show section-text or not, default: false-->
+        <attr format="dimension|reference" name="ssb_section_text_size"/> <!--text size of section-text, default: 14sp-->
+        <attr format="color|reference" name="ssb_section_text_color"/> <!--text color of section-text, default: same as right-track's color-->
+        <!--text position of section-text relative to track, sides, bottom_sides, below_section_mark, default: sides-->
+        <attr name="ssb_section_text_position">
+            <enum name="sides" value="0"/>
+            <enum name="bottom_sides" value="1"/>
+            <enum name="below_section_mark" value="2"/>
+        </attr>
+        <attr format="integer" name="ssb_section_text_interval"/> <!--the interval of two section-text, default: 1-->
+        <attr format="boolean" name="ssb_show_thumb_text"/> <!--show real time progress-text under thumb or not, default: false-->
+        <attr format="dimension|reference" name="ssb_thumb_text_size"/> <!--text size of progress-text, default: 14sp-->
+        <attr format="color|reference" name="ssb_thumb_text_color"/> <!--text color of progress-text, default: same as left-track's color-->
+        <attr format="boolean" name="ssb_show_progress_in_float"/> <!--show Sign-progress in float or not, default: false-->
+        <attr format="boolean" name="ssb_touch_to_seek"/> <!--touch anywhere on track to quickly seek, default: false-->
+        <attr format="boolean" name="ssb_seek_by_section"/> <!--seek by section, the progress may not be linear, default: false-->
+        <attr format="color|reference" name="ssb_sign_color"/> <!--color of sign, default: same as left-track's color-->
+        <attr format="color|reference" name="ssb_sign_border_color"/> <!--color of sign, border-->
+        <attr format="boolean" name="ssb_sign_show_border"/> <!--color of sign, default: same as left-track's color-->
+        <attr format="dimension|reference" name="ssb_sign_text_size"/> <!--text size of sign-progress, default: 14sp-->
+        <attr format="dimension|reference" name="ssb_sign_border_size"/> <!--border size, default: 1dp-->
+        <attr format="color|reference" name="ssb_sign_text_color"/> <!--text color of sign-progress, default: #ffffffff-->
+        <attr format="integer" name="ssb_anim_duration"/> <!--duration of animation, default: 200ms-->
+        <attr format="boolean" name="ssb_show_sign"/> <!--hide sign, default: false-->
+        <attr format="dimension|reference" name="ssb_text_space"/><!--default:2dp-->
+        <attr format="reference" name="ssb_sides_labels"/><!--default:null-->
+        <attr format="float|reference" name="ssb_thumb_bg_alpha"/> <!--0.0f-1.0f, default: 0.2f-->
+        <attr format="float|reference" name="ssb_thumb_ratio"/> <!--0.0f-1.0f, default: 0.7f-->
+        <attr format="boolean" name="ssb_show_thumb_shadow"/> <!--0.0f-1.0f, default: false-->
+        <attr format="boolean" name="ssb_sign_arrow_autofloat"/> <!--sign arrow auto float, default: true-->
+        <attr format="dimension|reference" name="ssb_sign_height"/> <!--sign height,default:22dp-->
+        <attr format="dimension|reference" name="ssb_sign_width"/> <!--sign_width ,default:72dp-->
+        <attr format="dimension|reference" name="ssb_sign_arrow_height"/> <!--sign arrow height ,default:3dp-->
+        <attr format="dimension|reference" name="ssb_sign_arrow_width"/> <!--sign arrow width, default:5dp-->
+        <attr format="dimension|reference" name="ssb_sign_round"/> <!--sign round, default:3dp-->
+        <attr format="color|reference" name="ssb_unusable_color"/> <!--unusable text color, default:Color.GRAY-->
+    </declare-styleable>
+</resources>
