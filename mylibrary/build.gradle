@@ -71,4 +71,8 @@ dependencies {
     //工具类
     implementation "com.blankj:utilcode:1.29.0"
 
+    implementation project(':jzlibrary')
+
+    implementation project(':lprogressview')
+
 }

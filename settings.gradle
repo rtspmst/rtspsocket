@@ -15,8 +15,13 @@ dependencyResolutionManagement {
         mavenCentral() // Warning: this repository is going to shut down soon
     }
 }
+
 rootProject.name = "SocketLib"
+
 include ':app'
 
 include ':mylibrary'
 
+include ':jzlibrary'
+
+include ':lprogressview'
