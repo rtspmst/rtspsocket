@@ -9,7 +9,7 @@ android {
     defaultConfig {
         applicationId "com.whmst.socketlib"
         minSdk 24
-        targetSdk 29
+//        targetSdk 29
         versionCode 1
         versionName "1.0"
 
